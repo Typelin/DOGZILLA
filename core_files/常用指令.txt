@@ -1,0 +1,26 @@
+停止 (Kill)
+sudo pkill -f app_dogzilla.py
+手動啟動
+python3 /home/pi/DOGZILLA/app_dogzilla/app_dogzilla.py
+檢查是否在跑
+ps -ef
+
+
+停止服務
+sudo systemctl stop yahboom_oled.service
+啟動服務
+sudo systemctl start yahboom_oled.service
+檢查狀態
+systemctl status yahboom_oled.service
+
+
+查看 IP 位置
+hostname -I
+檢查 Port 佔用
+sudo netstat -tlnp
+重啟樹莓派
+sudo reboot
+
+強制關閉主控程式與 OLED 顯示
+sudo pkill -f app_dogzilla.py
+sudo pkill -f oled_dogzilla.py
